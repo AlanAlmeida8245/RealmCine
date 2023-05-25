@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+      { "source": "^/(filme|serie|pesquisa|filmes)/.*$", "destination": "/index.html" }
+    ]
+  }
+  
