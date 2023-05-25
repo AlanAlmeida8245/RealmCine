@@ -1,6 +1,10 @@
 {
     "rewrites": [
-      { "source": "^/(filme|serie|pesquisa|filmes)/.*$", "destination": "/index.html" }
+      { "source": "/filme/:id", "destination": "/index.html" },
+      { "source": "/serie/:id", "destination": "/index.html" },
+      { "source": "/pesquisa/:namemovie", "destination": "/index.html" },
+      { "source": "/filmes/:genereid", "destination": "/index.html" },
+      { "source": "/(.*)", "destination": "/index.html" }
     ]
   }
   
