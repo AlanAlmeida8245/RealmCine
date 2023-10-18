@@ -11,7 +11,9 @@ export default {
         verde1: "#1D976C",
         verde2: "#93F9B9",
         roxo: "#400259",
-        roxo2: "#2f0743"
+        roxo2: "#2f0743",
+        "preto": "#1b191b",
+        "verde": "#e3fb54"
       },
       spacing: {
         '100': '32rem',

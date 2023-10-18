@@ -191,9 +191,9 @@ export default function MoviePage()
                             <p className="ml-2 text-base font-bold text-white">{movie.vote_average}</p>
                         </Rating>
                         <div className="h-18 ">
-                            <p className="text-white text-sm md:text-lg md:ml-5 overflow-hidden">{movie.overview}</p>
+                            <p className="text-gray-300 text-sm md:text-lg md:ml-5 overflow-hidden">{movie.overview}</p>
                          </div>
-                        {producers && <p className="text-red-500">{producers.name}</p>}
+                        {producers && <p className="text-verde bg-preto w-48  text-center p-2 rounded-lg">{producers.name}</p>}
                     </div>  
                         
                
@@ -207,9 +207,11 @@ export default function MoviePage()
                         ator.profile_path && (
                             <>
                             <div className="movie-card hover:shadow-lg hover:shadow-purple-400  transition-all hover:cursor-pointer " key={index}>
-                                <img src={ImageUrl + ator.profile_path} alt={ator.name} />
+                                <img src={ImageUrl + ator.profile_path} alt={ator.name} 
+                                    className="rounded-xl"
+                                />
                             </div>
-                            <div className=" text-white mt-2 p-2 max-md:text-sm">
+                            <div className=" text-white mt-2 p-2 max-md:text-sm text-center">
                                 <h1 className="text-lg max-md:text-sm">{ator.name}</h1>
                                 <p className="text-yellow-300">{ator.character}</p>
                             </div>
@@ -226,7 +228,7 @@ export default function MoviePage()
                         {reviews && reviews.length > 0 ? (
                         reviews.map((review: Reviews) => (
                             <div className="flex flex-col gap-3 mt-5 text-white">
-                            <div className="flex flex-col gap-4 bg-purple-700 p-4 m-5 shadow-2xl shadow-gray-800">
+                            <div className="flex flex-col gap-4 bg-gray-900 p-4 m-5 shadow-2xl shadow-gray-800">
                                 <div className="flex justify justify-between">
                                 <div className="flex gap-2">
                                     <div>

@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom"
 import {BsFillArrowRightSquareFill} from "react-icons/bs"
 import {BsFillArrowLeftSquareFill} from "react-icons/bs"
 import {Spinner } from "flowbite-react"
+import React from "react"
 
 const apiKey = import.meta.env.VITE_API_KEY
 const ImageUrl = import.meta.env.VITE_IMG
@@ -90,9 +91,7 @@ export default function PagesGeneres()
       const moviesURL = `${ListURL}discover/movie?${apiKey}&with_genres=${genereid}&page=${Page}&page_size=40&language=pt-br`;
         getmoviesMovies(moviesURL) 
 
-     
-
-  }, [Page])
+  }, [Page, genereid])
 
     return (
         <div>

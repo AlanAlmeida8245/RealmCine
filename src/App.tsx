@@ -6,13 +6,15 @@ import MoviePage from './components/Pages/MoviePage';
 import SeriePage from './components/Pages/SeriePage';
 import SearchPage from './components/Pages/SearchPage';
 import PagesGeneres from './components/Pages/PagesGeneres';
+import React from 'react';
+
 
 function App() {
 
   return (
     <>
-     <Naavbar />
-      <BrowserRouter>
+        <Naavbar />
+     
           <Routes>
               <Route path="/" element={<Home />}></Route>
               <Route path="/filme/:id" element={<MoviePage />}></Route>
@@ -20,7 +22,6 @@ function App() {
               <Route path="/pesquisa/:namemovie" element={<SearchPage />}></Route>
               <Route path="/filmes/:genereid" element={<PagesGeneres />}></Route>
           </Routes>
-      </BrowserRouter>
     </>
   )
 }

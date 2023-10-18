@@ -1,5 +1,7 @@
 
 import { Carousel } from "flowbite-react"
+import {Swiper, SwiperSlide} from "swiper/react"
+
 const MovieURL = import.meta.env.VITE_API
 const BackURL = import.meta.env.VITE_IMGBP
 const apiKey = import.meta.env.VITE_API_KEY
@@ -7,6 +9,7 @@ const apiKey = import.meta.env.VITE_API_KEY
 import axios from "axios"
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import React from "react"
 
 interface Movie {
   backdrop_path: string,
@@ -43,9 +46,9 @@ export default function CarroselCard()
  
             <img key={movie.backdrop_path} src={BackURL + movie.backdrop_path} className="w-full   hover:cursor-pointer" />
        
-          <div className="absolute inset-0 flex items-center justify-center">
+          <div className="absolute inset-0 flex items-center justify-center top-32">
            <Link to={`filme/${movie.id}`}>
-          <p className="bg-roxo2 p-2 rounded text-yellow-300 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">{movie.title}</p>
+          <p className="bg-preto p-2 rounded text-verde text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">{movie.title}</p>
           </Link>
         </div>
           </div>

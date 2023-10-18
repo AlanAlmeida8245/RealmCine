@@ -1,5 +1,5 @@
 
-
+import React from 'react';
 import {useParams } from "react-router-dom"
 const SearchURL = import.meta.env.VITE_SEARCH
 const apiKey = import.meta.env.VITE_API_KEY
@@ -61,13 +61,13 @@ export default function SearchPage()
 
     return (
         <div>
-            <SearchInput />
             <h1 className="text-3xl md:text-5xl text-white ml-5 mt-5">
             Resultado para:{" "}
-            <span className="text-yellow-300 font-bold">{namemovie}</span>
+            <span className="text-verde font-bold">{namemovie}</span>
             </h1>
-            <p className="text-base md:text-lg text-purple-500 font-bold ml-5 mt-2">
-            Página {Page} de {TotalPage}
+            <p className="text-gray-300 ml-5">Confira os principais resultados sobre {namemovie} como filmes, series e mais.</p>
+            <p className="text-base md:text-lg text-white font-bold ml-5 mt-2">
+            Página {Page} <span className="text-verde">de</span> {TotalPage}
             </p>
             {movies && (
             <div className="flex justify-center mt-2">

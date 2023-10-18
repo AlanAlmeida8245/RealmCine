@@ -7,6 +7,7 @@ const MovieURL = import.meta.env.VITE_API
 const apiKey = import.meta.env.VITE_API_KEY
 const ImageUrl = import.meta.env.VITE_IMG
 import { Link } from 'react-router-dom';
+import React from 'react';
 
 
 export default function PopularMovies() {
@@ -81,7 +82,7 @@ export default function PopularMovies() {
           <Slider {...settings} className='m-7'>
           {topMovies.map((movie) => (
               <Link to={`filme/${movie.id}`}>
-                <div className="movie-card hover:shadow-2xl hover:shadow-purple-400 hover:scale-110 transition-all hover:cursor-pointer" key={movie.id}>
+                <div className="movie-card hover:shadow-2xl hover:shadow-verde hover:scale-110 transition-all hover:cursor-pointer" key={movie.id}>
                      <img src={ImageUrl + movie.poster_path} alt={movie.title} width="300px"/>
                 </div>
               </Link>

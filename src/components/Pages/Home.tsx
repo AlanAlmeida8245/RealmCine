@@ -7,18 +7,13 @@ import NetflixOriginals from "../Cards/NetflixOriginals"
 import Animations from "../Cards/Animations"
 import PopularSeries from "../Cards/PopularSeries"
 
-import SearchInput from "../Layouts/SearchInput"
 
 export default function Home()
 {
-  
-
-
-  
 
     return (
       <div>
-         <SearchInput/>
+       
 
           <CarroselCard />
 

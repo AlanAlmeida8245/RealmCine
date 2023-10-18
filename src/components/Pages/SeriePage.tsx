@@ -179,7 +179,7 @@ export default function SeriePage()
                         </div>
                         <div className="space-y-2 max-pq:space-y-1">
                             <h1 className="text-white text-3xl md:text-5xl font-bold p-2 max-pq:text-1xl">{movie.name}</h1>
-                            <p className="text-yellow-300 font-bold ml-2">LanÃƒÂ§amento: {getDate(movie.first_air_date)}</p>
+                            <p className="text-yellow-300 font-bold ml-2">Lançamento: {getDate(movie.first_air_date)}</p>
                             <Rating>
                                 <Rating.Star />
                                 <p className="ml-2 text-base font-bold text-white">{movie.vote_average}</p>
