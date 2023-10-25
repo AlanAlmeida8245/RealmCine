@@ -1,6 +1,5 @@
 
 import { Carousel } from "flowbite-react"
-import {Swiper, SwiperSlide} from "swiper/react"
 
 const MovieURL = import.meta.env.VITE_API
 const BackURL = import.meta.env.VITE_IMGBP

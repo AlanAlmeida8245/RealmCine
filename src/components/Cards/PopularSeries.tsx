@@ -7,6 +7,7 @@ const SerieURL = import.meta.env.VITE_APISERIE
 const apiKey = import.meta.env.VITE_API_KEY
 const ImageUrl = import.meta.env.VITE_IMG
 import { Link } from 'react-router-dom';
+import React from 'react';
 
 
 export default function PopularSeries() {

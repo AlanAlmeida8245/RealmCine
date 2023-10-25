@@ -6,7 +6,7 @@ const apiKey = import.meta.env.VITE_API_KEY
 const ImageUrl = import.meta.env.VITE_IMG
 import axios from "axios"
 import { useEffect, useState } from "react"
-import SearchInput from "../Layouts/SearchInput"
+
 import {Spinner } from "flowbite-react";
 import { useNavigate } from "react-router-dom"
 import {BsFillArrowRightSquareFill} from "react-icons/bs"
